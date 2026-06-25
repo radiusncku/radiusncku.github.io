@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RADIUS Lab · NCKU Civil Engineering</title>
+  <meta name="description" content="RADIUS Lab — resilient infrastructure through data, sensing, and computation. Department of Civil Engineering, National Cheng Kung University." />
+
+  <!-- Fonts (needs internet; this is fine for a live website) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=IBM+Plex+Mono:wght@400;500&family=Noto+Sans+TC:wght@400;500;700;900&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+
+  <!-- NOTE: this file is the page skeleton. The text content comes from
+       content.en.json / content.zh.json and is inserted by build.py.
+       Do NOT edit index.html by hand — edit the JSON files and re-run build.py. -->
+</head>
+<body>
+  <header class="site-nav">
+    <div class="nav-inner">
+      <a class="brand" href="#top">
+        <span class="brand-name">RADIUS</span>
+        <span class="brand-sub">NCKU</span>
+      </a>
+      <nav class="nav-links">
+        <a class="nav-link" href="#research"><span data-en>Research</span><span data-zh>研究</span></a>
+        <a class="nav-link" href="#publications"><span data-en>Publications</span><span data-zh>著作</span></a>
+        <a class="nav-link" href="#people"><span data-en>People</span><span data-zh>成員</span></a>
+        <a class="nav-link" href="#news"><span data-en>News</span><span data-zh>消息</span></a>
+        <button class="lang-toggle" type="button" data-lang-toggle aria-label="Switch language">
+          <span data-en>中文</span><span data-zh>EN</span>
+        </button>
+        <a class="btn-join" href="#join"><span data-en>Join us</span><span data-zh>加入</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" id="top">
+    <div class="container">
+      <p class="eyebrow" data-en>NCKU Civil Engineering</p>
+      <p class="eyebrow" data-zh>國立成功大學 土木工程學系</p>
+      <h1 class="hero-title" data-en>Resilient cities are <span class="accent">engineered</span>, not hoped for.</h1>
+      <h1 class="hero-title" data-zh>韌性城市，是<span class="accent">工程</span>打造的成果。</h1>
+      <p class="hero-sub" data-en>RADIUS builds the data, models, and sensing that let infrastructure survive the hazards of a changing world.</p>
+      <p class="hero-sub" data-zh>RADIUS 實驗室發展資料、模型與感測技術，讓基礎設施在變動的世界中承受各種災害。</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#research"><span data-en>Explore research</span><span data-zh>探索研究</span></a>
+        <a class="btn btn-ghost" href="#publications"><span data-en>Publications</span><span data-zh>研究著作</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="research" id="research">
+    <div class="container">
+      <p class="eyebrow" data-en>Research</p>
+      <p class="eyebrow" data-zh>研究方向</p>
+
+      <div class="research-item">
+        <span class="research-num">01</span>
+        <div class="research-body">
+          <div>
+            <h3 class="ri-title" data-en>Infrastructure resilience</h3>
+      <h3 class="ri-title" data-zh>基礎設施韌性</h3>
+          </div>
+          <div>
+            <p class="ri-desc" data-en>Modeling how bridges, pipelines, and networks degrade and recover under extreme events.</p>
+      <p class="ri-desc" data-zh>建立橋梁、管線與網路在極端事件下劣化與復原的模型。</p>
+          </div>
+        </div>
+      </div>
+      <div class="research-item">
+        <span class="research-num">02</span>
+        <div class="research-body">
+          <div>
+            <h3 class="ri-title" data-en>Structural health monitoring</h3>
+      <h3 class="ri-title" data-zh>結構健康監測</h3>
+          </div>
+          <div>
+            <p class="ri-desc" data-en>Turning sensor data into early, actionable signals of structural change and risk.</p>
+      <p class="ri-desc" data-zh>將感測資料轉化為結構變化與風險的早期、可行動訊號。</p>
+          </div>
+        </div>
+      </div>
+      <div class="research-item">
+        <span class="research-num">03</span>
+        <div class="research-body">
+          <div>
+            <h3 class="ri-title" data-en>Hazard &amp; climate risk</h3>
+      <h3 class="ri-title" data-zh>災害與氣候風險</h3>
+          </div>
+          <div>
+            <p class="ri-desc" data-en>Quantifying how earthquakes, floods, and a changing climate reshape infrastructure risk.</p>
+      <p class="ri-desc" data-zh>量化地震、洪水與氣候變遷如何重塑基礎設施的風險。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pubs" id="publications">
+    <div class="container">
+      <p class="eyebrow" data-en>Selected publications</p>
+      <p class="eyebrow" data-zh>代表著作</p>
+      <h2 class="section-title" data-en>Recent work</h2>
+      <h2 class="section-title" data-zh>近期研究</h2>
+
+      <div class="pub">
+        <span class="pub-year">2025</span>
+        <div>
+          <h3 class="pub-title" data-en>Data-driven resilience assessment of aging bridge networks</h3>
+      <h3 class="pub-title" data-zh>老化橋梁網路的資料驅動韌性評估</h3>
+          <p class="pub-meta">C.-W. Hsu et al. · <em>Structural Safety</em></p>
+          <div class="pub-links"><a href="#">[ PDF ]</a><a href="#">[ Code ]</a><a href="#">[ DOI ]</a></div>
+        </div>
+      </div>
+      <div class="pub">
+        <span class="pub-year">2024</span>
+        <div>
+          <h3 class="pub-title" data-en>Physics-informed learning for structural health monitoring</h3>
+      <h3 class="pub-title" data-zh>結合物理知識的結構健康監測學習方法</h3>
+          <p class="pub-meta">C.-W. Hsu et al. · <em>Mechanical Systems &amp; Signal Processing</em></p>
+          <div class="pub-links"><a href="#">[ PDF ]</a><a href="#">[ Code ]</a><a href="#">[ DOI ]</a></div>
+        </div>
+      </div>
+      <div class="pub">
+        <span class="pub-year">2024</span>
+        <div>
+          <h3 class="pub-title" data-en>Digital twins for post-earthquake infrastructure recovery</h3>
+      <h3 class="pub-title" data-zh>震後基礎設施復原的數位孿生</h3>
+          <p class="pub-meta">C.-W. Hsu et al. · <em>Earthquake Engineering &amp; Structural Dynamics</em></p>
+          <div class="pub-links"><a href="#">[ PDF ]</a><a href="#">[ DOI ]</a></div>
+        </div>
+      </div>
+      <div class="pub">
+        <span class="pub-year">2023</span>
+        <div>
+          <h3 class="pub-title" data-en>Bayesian damage detection under environmental variability</h3>
+      <h3 class="pub-title" data-zh>環境變異下的貝氏損傷偵測</h3>
+          <p class="pub-meta">C.-W. Hsu et al. · <em>Journal of Sound and Vibration</em></p>
+          <div class="pub-links"><a href="#">[ PDF ]</a><a href="#">[ DOI ]</a></div>
+        </div>
+      </div>
+
+      <a class="more-link" href="#"><span data-en>View all publications →</span><span data-zh>查看所有著作 →</span></a>
+    </div>
+  </section>
+
+  <section class="people" id="people">
+    <div class="container">
+      <p class="eyebrow" data-en>People</p>
+      <p class="eyebrow" data-zh>成員</p>
+      <h2 class="section-title" data-en>The team</h2>
+      <h2 class="section-title" data-zh>研究團隊</h2>
+
+      <div class="pi">
+        <div class="photo pi-photo"><span>[ photo ]</span></div>
+        <div>
+          <h3 class="pi-name" data-en>Chia-Wei (Joe) Hsu</h3>
+      <h3 class="pi-name" data-zh>許家維</h3>
+          <p class="pi-role" data-en>Principal Investigator · Assistant Professor</p>
+      <p class="pi-role" data-zh>主持人 · 助理教授</p>
+          <p class="pi-bio" data-en>Joe leads RADIUS in the Department of Civil Engineering at National Cheng Kung University. His group works at the intersection of structural engineering, sensing, and data science to make infrastructure more resilient to natural hazards.</p>
+      <p class="pi-bio" data-zh>許家維為國立成功大學土木工程學系助理教授，主持 RADIUS 實驗室。研究橫跨結構工程、感測技術與資料科學，致力於提升基礎設施面對天然災害的韌性。</p>
+          <div class="pi-links"><a href="#">Google Scholar</a><a href="#">Email</a><a href="#">CV</a></div>
+        </div>
+      </div>
+
+      <div class="members">
+        <div class="member">
+          <div class="photo member-photo"><span>[ photo ]</span></div>
+          <h4>Yu-Hsuan Lin</h4>
+          <p class="member-role"><span data-en>Postdoctoral Researcher</span><span data-zh>博士後研究員</span></p>
+        </div>
+        <div class="member">
+          <div class="photo member-photo"><span>[ photo ]</span></div>
+          <h4>Cheng-Hao Wu</h4>
+          <p class="member-role"><span data-en>PhD Student</span><span data-zh>博士生</span></p>
+        </div>
+        <div class="member">
+          <div class="photo member-photo"><span>[ photo ]</span></div>
+          <h4>Mei-Ling Chen</h4>
+          <p class="member-role"><span data-en>PhD Student</span><span data-zh>博士生</span></p>
+        </div>
+        <div class="member">
+          <div class="photo member-photo"><span>[ photo ]</span></div>
+          <h4>Po-Yu Huang</h4>
+          <p class="member-role"><span data-en>MS Student</span><span data-zh>碩士生</span></p>
+        </div>
+        <div class="member">
+          <div class="photo member-photo"><span>[ photo ]</span></div>
+          <h4>Hsin-Yi Tsai</h4>
+          <p class="member-role"><span data-en>MS Student</span><span data-zh>碩士生</span></p>
+        </div>
+        <div class="member">
+          <div class="photo member-photo"><span>[ photo ]</span></div>
+          <h4>Daniel Reyes</h4>
+          <p class="member-role"><span data-en>Visiting Researcher</span><span data-zh>訪問學者</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="news" id="news">
+    <div class="container">
+      <p class="eyebrow" data-en>News</p>
+      <p class="eyebrow" data-zh>最新消息</p>
+      <h2 class="section-title" data-en>Recent updates</h2>
+      <h2 class="section-title" data-zh>近期動態</h2>
+      <div class="news-list">
+        <div class="news-item">
+          <span class="news-date">2026.06</span>
+          <p class="news-text" data-en>RADIUS is awarded a new grant to study resilient bridge networks.</p>
+      <p class="news-text" data-zh>RADIUS 獲得新計畫補助，研究韌性橋梁網路。</p>
+        </div>
+        <div class="news-item">
+          <span class="news-date">2026.05</span>
+          <p class="news-text" data-en>Welcome to two new graduate students joining the lab.</p>
+      <p class="news-text" data-zh>歡迎兩位新進研究生加入實驗室。</p>
+        </div>
+        <div class="news-item">
+          <span class="news-date">2026.03</span>
+          <p class="news-text" data-en>Our paper on physics-informed monitoring is accepted to MSSP.</p>
+      <p class="news-text" data-zh>結合物理知識的監測論文獲 MSSP 接受刊登。</p>
+        </div>
+        <div class="news-item">
+          <span class="news-date">2026.01</span>
+          <p class="news-text" data-en>Joe gives an invited talk at the National Earthquake Engineering Symposium.</p>
+      <p class="news-text" data-zh>許家維於全國地震工程研討會發表邀請演講。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="join" id="join">
+    <div class="container">
+      <div>
+        <p class="eyebrow" data-en>Join us</p>
+      <p class="eyebrow" data-zh>加入我們</p>
+        <h2 class="join-title" data-en>We're looking for curious people who like hard problems.</h2>
+      <h2 class="join-title" data-zh>我們正在尋找喜歡挑戰難題、充滿好奇心的夥伴。</h2>
+      </div>
+      <div>
+        <p class="join-text" data-en>We welcome prospective graduate students, postdocs, and undergraduates from civil engineering, mechanics, and data science. If our questions excite you, get in touch.</p>
+      <p class="join-text" data-zh>歡迎土木工程、力學與資料科學領域的準研究生、博士後與大學部同學加入。若你對我們的研究主題感興趣，歡迎與我們聯絡。</p>
+        <div class="join-actions">
+          <a class="btn-email" href="mailto:joe.hsu@gs.ncku.edu.tw">joe.hsu@gs.ncku.edu.tw</a>
+          <a class="btn-positions" href="#"><span data-en>Open positions</span><span data-zh>開放職缺</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div>
+        <span class="footer-brand">RADIUS</span>
+        <p class="footer-addr" data-en>Department of Civil Engineering<br />National Cheng Kung University<br />No. 1, University Road, Tainan 70101, Taiwan</p>
+        <p class="footer-addr" data-zh>國立成功大學 土木工程學系<br />70101 台南市東區大學路一號</p>
+      </div>
+      <div>
+        <p class="footer-col-title"><span data-en>Explore</span><span data-zh>瀏覽</span></p>
+        <div class="footer-links">
+          <a href="#research"><span data-en>Research</span><span data-zh>研究</span></a>
+          <a href="#publications"><span data-en>Publications</span><span data-zh>著作</span></a>
+          <a href="#people"><span data-en>People</span><span data-zh>成員</span></a>
+          <a href="#join"><span data-en>Join us</span><span data-zh>加入我們</span></a>
+        </div>
+      </div>
+      <div>
+        <p class="footer-col-title"><span data-en>Elsewhere</span><span data-zh>其他連結</span></p>
+        <div class="footer-links">
+          <a href="#">Google Scholar</a>
+          <a href="#">GitHub</a>
+          <a href="#">Bluesky</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copy">
+      <p>© 2026 RADIUS Lab · National Cheng Kung University</p>
+    </div>
+  </footer>
+</body>
+</html>

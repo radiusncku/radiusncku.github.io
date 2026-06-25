@@ -1,0 +1,150 @@
+{
+  "meta": {
+    "title": "RADIUS Lab · 成功大學土木工程學系",
+    "description": "RADIUS 實驗室 — 以資料、感測與計算打造韌性基礎設施。國立成功大學土木工程學系。"
+  },
+  "nav": {
+    "research": "研究",
+    "publications": "著作",
+    "people": "成員",
+    "news": "消息",
+    "lang_button": "EN",
+    "join": "加入"
+  },
+  "hero": {
+    "eyebrow": "國立成功大學 土木工程學系",
+    "title_before": "韌性城市，是",
+    "title_accent": "工程",
+    "title_after": "打造的成果。",
+    "subtitle": "RADIUS 實驗室發展資料、模型與感測技術，讓基礎設施在變動的世界中承受各種災害。",
+    "btn_primary": "探索研究",
+    "btn_secondary": "研究著作"
+  },
+  "research": {
+    "eyebrow": "研究方向",
+    "items": [
+      {
+        "num": "01",
+        "title": "基礎設施韌性",
+        "desc": "建立橋梁、管線與網路在極端事件下劣化與復原的模型。"
+      },
+      {
+        "num": "02",
+        "title": "結構健康監測",
+        "desc": "將感測資料轉化為結構變化與風險的早期、可行動訊號。"
+      },
+      {
+        "num": "03",
+        "title": "災害與氣候風險",
+        "desc": "量化地震、洪水與氣候變遷如何重塑基礎設施的風險。"
+      }
+    ]
+  },
+  "publications": {
+    "eyebrow": "代表著作",
+    "title": "近期研究",
+    "items": [
+      {
+        "year": "2025",
+        "title": "老化橋梁網路的資料驅動韌性評估",
+        "authors": "C.-W. Hsu et al.",
+        "journal": "Structural Safety",
+        "links": [
+          { "label": "PDF", "href": "#" },
+          { "label": "Code", "href": "#" },
+          { "label": "DOI", "href": "#" }
+        ]
+      },
+      {
+        "year": "2024",
+        "title": "結合物理知識的結構健康監測學習方法",
+        "authors": "C.-W. Hsu et al.",
+        "journal": "Mechanical Systems & Signal Processing",
+        "links": [
+          { "label": "PDF", "href": "#" },
+          { "label": "Code", "href": "#" },
+          { "label": "DOI", "href": "#" }
+        ]
+      },
+      {
+        "year": "2024",
+        "title": "震後基礎設施復原的數位孿生",
+        "authors": "C.-W. Hsu et al.",
+        "journal": "Earthquake Engineering & Structural Dynamics",
+        "links": [
+          { "label": "PDF", "href": "#" },
+          { "label": "DOI", "href": "#" }
+        ]
+      },
+      {
+        "year": "2023",
+        "title": "環境變異下的貝氏損傷偵測",
+        "authors": "C.-W. Hsu et al.",
+        "journal": "Journal of Sound and Vibration",
+        "links": [
+          { "label": "PDF", "href": "#" },
+          { "label": "DOI", "href": "#" }
+        ]
+      }
+    ],
+    "more": "查看所有著作 →"
+  },
+  "people": {
+    "eyebrow": "成員",
+    "title": "研究團隊",
+    "pi": {
+      "photo": "",
+      "name": "許家維",
+      "role": "主持人 · 助理教授",
+      "bio": "許家維為國立成功大學土木工程學系助理教授，主持 RADIUS 實驗室。研究橫跨結構工程、感測技術與資料科學，致力於提升基礎設施面對天然災害的韌性。",
+      "links": [
+        { "label": "Google Scholar", "href": "#" },
+        { "label": "Email", "href": "#" },
+        { "label": "CV", "href": "#" }
+      ]
+    },
+    "members": [
+      { "photo": "", "name": "Yu-Hsuan Lin", "role": "博士後研究員" },
+      { "photo": "", "name": "Cheng-Hao Wu", "role": "博士生" },
+      { "photo": "", "name": "Mei-Ling Chen", "role": "博士生" },
+      { "photo": "", "name": "Po-Yu Huang", "role": "碩士生" },
+      { "photo": "", "name": "Hsin-Yi Tsai", "role": "碩士生" },
+      { "photo": "", "name": "Daniel Reyes", "role": "訪問學者" }
+    ]
+  },
+  "news": {
+    "eyebrow": "最新消息",
+    "title": "近期動態",
+    "items": [
+      { "date": "2026.06", "text": "RADIUS 獲得新計畫補助，研究韌性橋梁網路。" },
+      { "date": "2026.05", "text": "歡迎兩位新進研究生加入實驗室。" },
+      { "date": "2026.03", "text": "結合物理知識的監測論文獲 MSSP 接受刊登。" },
+      { "date": "2026.01", "text": "許家維於全國地震工程研討會發表邀請演講。" }
+    ]
+  },
+  "join": {
+    "eyebrow": "加入我們",
+    "title": "我們正在尋找喜歡挑戰難題、充滿好奇心的夥伴。",
+    "text": "歡迎土木工程、力學與資料科學領域的準研究生、博士後與大學部同學加入。若你對我們的研究主題感興趣，歡迎與我們聯絡。",
+    "email": "joe.hsu@gs.ncku.edu.tw",
+    "positions": "開放職缺"
+  },
+  "footer": {
+    "brand": "RADIUS",
+    "address": "國立成功大學 土木工程學系\n70101 台南市東區大學路一號",
+    "explore_title": "瀏覽",
+    "explore_links": [
+      { "label": "研究", "href": "#research" },
+      { "label": "著作", "href": "#publications" },
+      { "label": "成員", "href": "#people" },
+      { "label": "加入我們", "href": "#join" }
+    ],
+    "elsewhere_title": "其他連結",
+    "elsewhere_links": [
+      { "label": "Google Scholar", "href": "#" },
+      { "label": "GitHub", "href": "#" },
+      { "label": "Bluesky", "href": "#" }
+    ],
+    "copyright": "© 2026 RADIUS Lab · National Cheng Kung University"
+  }
+}

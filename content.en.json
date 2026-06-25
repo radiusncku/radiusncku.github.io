@@ -1,0 +1,150 @@
+{
+  "meta": {
+    "title": "RADIUS Lab · NCKU Civil Engineering",
+    "description": "RADIUS Lab — resilient infrastructure through data, sensing, and computation. Department of Civil Engineering, National Cheng Kung University."
+  },
+  "nav": {
+    "research": "Research",
+    "publications": "Publications",
+    "people": "People",
+    "news": "News",
+    "lang_button": "中文",
+    "join": "Join us"
+  },
+  "hero": {
+    "eyebrow": "NCKU Civil Engineering",
+    "title_before": "Resilient cities are ",
+    "title_accent": "engineered",
+    "title_after": ", not hoped for.",
+    "subtitle": "RADIUS builds the data, models, and sensing that let infrastructure survive the hazards of a changing world.",
+    "btn_primary": "Explore research",
+    "btn_secondary": "Publications"
+  },
+  "research": {
+    "eyebrow": "Research",
+    "items": [
+      {
+        "num": "01",
+        "title": "Infrastructure resilience",
+        "desc": "Modeling how bridges, pipelines, and networks degrade and recover under extreme events."
+      },
+      {
+        "num": "02",
+        "title": "Structural health monitoring",
+        "desc": "Turning sensor data into early, actionable signals of structural change and risk."
+      },
+      {
+        "num": "03",
+        "title": "Hazard & climate risk",
+        "desc": "Quantifying how earthquakes, floods, and a changing climate reshape infrastructure risk."
+      }
+    ]
+  },
+  "publications": {
+    "eyebrow": "Selected publications",
+    "title": "Recent work",
+    "items": [
+      {
+        "year": "2025",
+        "title": "Data-driven resilience assessment of aging bridge networks",
+        "authors": "C.-W. Hsu et al.",
+        "journal": "Structural Safety",
+        "links": [
+          { "label": "PDF", "href": "#" },
+          { "label": "Code", "href": "#" },
+          { "label": "DOI", "href": "#" }
+        ]
+      },
+      {
+        "year": "2024",
+        "title": "Physics-informed learning for structural health monitoring",
+        "authors": "C.-W. Hsu et al.",
+        "journal": "Mechanical Systems & Signal Processing",
+        "links": [
+          { "label": "PDF", "href": "#" },
+          { "label": "Code", "href": "#" },
+          { "label": "DOI", "href": "#" }
+        ]
+      },
+      {
+        "year": "2024",
+        "title": "Digital twins for post-earthquake infrastructure recovery",
+        "authors": "C.-W. Hsu et al.",
+        "journal": "Earthquake Engineering & Structural Dynamics",
+        "links": [
+          { "label": "PDF", "href": "#" },
+          { "label": "DOI", "href": "#" }
+        ]
+      },
+      {
+        "year": "2023",
+        "title": "Bayesian damage detection under environmental variability",
+        "authors": "C.-W. Hsu et al.",
+        "journal": "Journal of Sound and Vibration",
+        "links": [
+          { "label": "PDF", "href": "#" },
+          { "label": "DOI", "href": "#" }
+        ]
+      }
+    ],
+    "more": "View all publications →"
+  },
+  "people": {
+    "eyebrow": "People",
+    "title": "The team",
+    "pi": {
+      "photo": "",
+      "name": "Chia-Wei (Joe) Hsu",
+      "role": "Principal Investigator · Assistant Professor",
+      "bio": "Joe leads RADIUS in the Department of Civil Engineering at National Cheng Kung University. His group works at the intersection of structural engineering, sensing, and data science to make infrastructure more resilient to natural hazards.",
+      "links": [
+        { "label": "Google Scholar", "href": "#" },
+        { "label": "Email", "href": "#" },
+        { "label": "CV", "href": "#" }
+      ]
+    },
+    "members": [
+      { "photo": "", "name": "Yu-Hsuan Lin", "role": "Postdoctoral Researcher" },
+      { "photo": "", "name": "Cheng-Hao Wu", "role": "PhD Student" },
+      { "photo": "", "name": "Mei-Ling Chen", "role": "PhD Student" },
+      { "photo": "", "name": "Po-Yu Huang", "role": "MS Student" },
+      { "photo": "", "name": "Hsin-Yi Tsai", "role": "MS Student" },
+      { "photo": "", "name": "Daniel Reyes", "role": "Visiting Researcher" }
+    ]
+  },
+  "news": {
+    "eyebrow": "News",
+    "title": "Recent updates",
+    "items": [
+      { "date": "2026.06", "text": "RADIUS is awarded a new grant to study resilient bridge networks." },
+      { "date": "2026.05", "text": "Welcome to two new graduate students joining the lab." },
+      { "date": "2026.03", "text": "Our paper on physics-informed monitoring is accepted to MSSP." },
+      { "date": "2026.01", "text": "Joe gives an invited talk at the National Earthquake Engineering Symposium." }
+    ]
+  },
+  "join": {
+    "eyebrow": "Join us",
+    "title": "We're looking for curious people who like hard problems.",
+    "text": "We welcome prospective graduate students, postdocs, and undergraduates from civil engineering, mechanics, and data science. If our questions excite you, get in touch.",
+    "email": "joe.hsu@gs.ncku.edu.tw",
+    "positions": "Open positions"
+  },
+  "footer": {
+    "brand": "RADIUS",
+    "address": "Department of Civil Engineering\nNational Cheng Kung University\nNo. 1, University Road, Tainan 70101, Taiwan",
+    "explore_title": "Explore",
+    "explore_links": [
+      { "label": "Research", "href": "#research" },
+      { "label": "Publications", "href": "#publications" },
+      { "label": "People", "href": "#people" },
+      { "label": "Join us", "href": "#join" }
+    ],
+    "elsewhere_title": "Elsewhere",
+    "elsewhere_links": [
+      { "label": "Google Scholar", "href": "#" },
+      { "label": "GitHub", "href": "#" },
+      { "label": "Bluesky", "href": "#" }
+    ],
+    "copyright": "© 2026 RADIUS Lab · National Cheng Kung University"
+  }
+}
