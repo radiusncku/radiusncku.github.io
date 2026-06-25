@@ -345,10 +345,30 @@ def main():
     n_pubs = len(en["publications"]["items"])
     n_news = len(en["news"]["items"])
     n_people = 1 + len(en["people"]["members"])
-    print("Built index.html successfully.")
-    print(f"  {n_pubs} publications · {n_news} news items · {n_people} people")
-    print("  Next: open index.html in a browser to preview, "
-          "then run check_bilingual.py.")
+    print("Built index.html")
+    print(f"  {n_pubs} publications | {n_news} news items | {n_people} people")
+
+    # Automatically double-check the result, so one click does everything:
+    # build the page AND confirm the English / Chinese lines all line up.
+    ok = True
+    try:
+        from check_bilingual import check_file
+        print()
+        ok = check_file("index.html")
+    except Exception as e:
+        print(f"  (auto-check skipped: {e})")
+
+    print()
+    if ok:
+        print("=" * 52)
+        print("  DONE. index.html is ready.")
+        print("  Next: preview it, then Commit + Sync in VS Code.")
+        print("=" * 52)
+    else:
+        print("=" * 52)
+        print("  PROBLEM found above. Fix the JSON, then Run again.")
+        print("=" * 52)
+        sys.exit(1)
 
 
 if __name__ == "__main__":
