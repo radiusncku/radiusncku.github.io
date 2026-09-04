@@ -79,6 +79,17 @@ def spanpair(en_text, zh_text):
             f'<span data-zh>{esc(zh_text)}</span>')
 
 
+def bi(en_text, zh_text):
+    """Bilingual inline text with graceful fallback: if both languages are
+    present and differ, toggle between them; if one is missing (or they're
+    identical), just show whichever exists, in both languages. Prevents empty
+    elements when only one language has been filled in."""
+    e, z = (en_text or "").strip(), (zh_text or "").strip()
+    if e and z and e != z:
+        return f'<span data-en>{esc(e)}</span><span data-zh>{esc(z)}</span>'
+    return esc(e or z)
+
+
 # ---------------------------------------------------------------------------
 # shared chrome: nav + footer
 # ---------------------------------------------------------------------------
@@ -375,14 +386,12 @@ def build_teaching(en, zh):
             for a, b in zip(rows_en, rows_zh):
                 lead = esc(a.get("term", "")) if kind == "course" else esc(a.get("date", ""))
                 venue = ""
-                if a.get("venue"):
-                    venue = (f'\n            <p class="tt-venue" data-en>{esc(a["venue"])}</p>'
-                             f'\n            <p class="tt-venue" data-zh>{esc(b["venue"])}</p>')
+                if a.get("venue") or b.get("venue"):
+                    venue = f'\n            <p class="tt-venue">{bi(a.get("venue",""), b.get("venue",""))}</p>'
                 lines.append(f'''        <div class="tt-item">
           <span class="tt-lead">{lead}</span>
           <div>
-            <p class="tt-title" data-en>{esc(a["title"])}</p>
-            <p class="tt-title" data-zh>{esc(b["title"])}</p>{venue}
+            <p class="tt-title">{bi(a.get("title",""), b.get("title",""))}</p>{venue}
           </div>
         </div>''')
             body = "\n".join(lines)

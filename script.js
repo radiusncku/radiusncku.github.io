@@ -67,9 +67,35 @@
     nodes.forEach(function (n) { io.observe(n); });
   }
 
+  /* ---- 4) Scroll-spy: underline the nav item for the section in view --- */
+  function initScrollSpy() {
+    var map = {};
+    document.querySelectorAll('.nav-link').forEach(function (a) {
+      var href = a.getAttribute('href') || '';
+      var i = href.indexOf('#');
+      if (i === -1) return;
+      var sec = document.getElementById(href.slice(i + 1));
+      if (sec) map[href.slice(i + 1)] = { link: a, sec: sec };
+    });
+    var ids = Object.keys(map);
+    if (!ids.length || !('IntersectionObserver' in window)) return;
+
+    var ratio = {};
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) { ratio[e.target.id] = e.isIntersecting ? e.intersectionRatio : 0; });
+      var best = null, bestR = 0;
+      ids.forEach(function (id) { if ((ratio[id] || 0) > bestR) { bestR = ratio[id]; best = id; } });
+      ids.forEach(function (id) { map[id].link.classList.toggle('active', id === best); });
+    }, { threshold: [0, 0.25, 0.5, 0.75, 1], rootMargin: '-25% 0px -55% 0px' });
+
+    ids.forEach(function (id) { io.observe(map[id].sec); });
+  }
+
+  function init() { initReveal(); initScrollSpy(); }
+
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initReveal);
+    document.addEventListener('DOMContentLoaded', init);
   } else {
-    initReveal();
+    init();
   }
 })();

@@ -30,7 +30,7 @@
 }
 
 * { box-sizing: border-box; }
-html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+html { scroll-behavior: smooth; scroll-padding-top: 104px; }
 body {
   margin: 0;
   background: var(--cream);
@@ -52,10 +52,10 @@ a { text-decoration: none; color: inherit; }
 .container { max-width: var(--maxw); margin: 0 auto; padding: 0 40px; }
 .eyebrow {
   font-family: var(--font-mono);
-  font-size: 15px; letter-spacing: 0.08em; text-transform: uppercase;
-  color: var(--phoenix); margin: 0;
+  font-size: 16px; letter-spacing: 0.07em; text-transform: uppercase;
+  color: var(--phoenix); margin: 0 0 6px;
 }
-.eyebrow[data-zh] { font-size: 15.5px; letter-spacing: 0.04em; }
+.eyebrow[data-zh] { font-size: 16px; letter-spacing: 0.03em; }
 .section-title {
   font-family: var(--font-display); font-weight: 700;
   font-size: 36px; letter-spacing: -0.015em; color: var(--ink);
@@ -286,6 +286,8 @@ img.photo { object-fit: cover; padding: 0; }
 .tt-title { font-size: 16.5px; line-height: 1.5; color: var(--ink); margin: 0; }
 .tt-title[data-zh] { font-size: 16px; line-height: 1.7; }
 .tt-title em { font-style: italic; color: var(--text-faint); }
+.tt-venue { font-size: 14px; color: var(--text-faint); margin: 4px 0 0; }
+.tt-venue[data-zh] { line-height: 1.6; }
 .tt-venue { font-size: 14px; line-height: 1.5; color: var(--text-faint); margin: 4px 0 0; }
 .tt-venue[data-zh] { line-height: 1.65; }
 .empty-state { font-size: 16px; color: var(--text-faint); margin: 6px 0 0; }

@@ -421,11 +421,11 @@
     "courses_title": "Courses",
     "courses": [
       {
-        "term": "Fall 2025, Fall 2026",
+        "term": "Fall 2025 & 2026",
         "title": "Engineering Project Management"
       },
       {
-        "term": "Fall 2025, Fall 2026",
+        "term": "Fall 2025 & 2026",
         "title": "Introduction to Disaster Prevention Technology and Management"
       },
       {
@@ -440,14 +440,14 @@
     "talks_title": "Invited Talks",
     "talks": [
       {
-        "date": "2026.06.18",
-        "title": "Data-Driven Resilience Planning for Transportation Infrastructure",
-        "venue": "Kaohsiung Rapid Transit Bureau (Metro Yellow Line IV&V — Q2 2026 training)"
+        "date": "2026/06/18",
+        "title": "",
+        "venue": "Kaohsiung Rapid Transit Bureau"
       },
       {
-        "date": "2026.04.13",
+        "date": "2026/04/13",
         "title": "Building Smart Resilience: A Data-Driven Perspective on Mobility and Infrastructure Under Disasters",
-        "venue": "Department of Civil Engineering, National Taiwan University"
+        "venue": "Dept. of Civil Engineering, National Taiwan University"
       }
     ],
     "empty": "Details coming soon."
