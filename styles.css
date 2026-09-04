@@ -52,10 +52,10 @@ a { text-decoration: none; color: inherit; }
 .container { max-width: var(--maxw); margin: 0 auto; padding: 0 40px; }
 .eyebrow {
   font-family: var(--font-mono);
-  font-size: 14px; letter-spacing: 0.09em; text-transform: uppercase;
+  font-size: 15px; letter-spacing: 0.08em; text-transform: uppercase;
   color: var(--phoenix); margin: 0;
 }
-.eyebrow[data-zh] { font-size: 14.5px; letter-spacing: 0.05em; }
+.eyebrow[data-zh] { font-size: 15.5px; letter-spacing: 0.04em; }
 .section-title {
   font-family: var(--font-display); font-weight: 700;
   font-size: 36px; letter-spacing: -0.015em; color: var(--ink);
@@ -132,7 +132,8 @@ a { text-decoration: none; color: inherit; }
 
 /* ============================== ABOUT ============================ */
 .about { background: var(--cream); border-bottom: 1px solid var(--border); }
-.about .container { padding-top: 92px; padding-bottom: 92px; }
+.about .container { padding-top: 116px; padding-bottom: 92px; }
+.about .eyebrow { margin-bottom: 6px; }
 .about-body { max-width: 780px; }
 .about-text { font-size: 17px; line-height: 1.72; color: var(--text-muted); margin: 20px 0 0; }
 .about-text[data-zh] { font-size: 16.5px; line-height: 1.95; }
@@ -285,7 +286,16 @@ img.photo { object-fit: cover; padding: 0; }
 .tt-title { font-size: 16.5px; line-height: 1.5; color: var(--ink); margin: 0; }
 .tt-title[data-zh] { font-size: 16px; line-height: 1.7; }
 .tt-title em { font-style: italic; color: var(--text-faint); }
+.tt-venue { font-size: 14px; line-height: 1.5; color: var(--text-faint); margin: 4px 0 0; }
+.tt-venue[data-zh] { line-height: 1.65; }
 .empty-state { font-size: 16px; color: var(--text-faint); margin: 6px 0 0; }
+
+/* ===== PI page: research interests + CV blocks ===== */
+.cv-block { margin-top: 44px; }
+.cv-block-title { font-family: var(--font-display); font-size: 20px; font-weight: 700; color: var(--maroon); margin: 0 0 14px; }
+.pi-tags { display: flex; flex-wrap: wrap; gap: 10px; }
+.pi-tag { font-family: var(--font-mono); font-size: 13px; color: var(--maroon); background: #EFE6DD; border: 1px solid #E0D4C8; border-radius: 999px; padding: 6px 14px; }
+.cv-block .tt-item { grid-template-columns: 120px 1fr; }
 
 /* ========================== RESOURCES ========================== */
 .res-item { padding: 22px 0; border-top: 1px solid var(--border-line); }

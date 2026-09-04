@@ -264,6 +264,43 @@ def build_pi(en, zh):
         photo = '<div class="photo pi-photo"><span>[ photo ]</span></div>'
     links = "".join(f'<a href="{esc(lk["href"])}">{esc(lk["label"])}</a>'
                     for lk in pi_en["links"])
+
+    # research-interest tags
+    tags = " ".join(f'<span class="pi-tag">{spanpair(a, b)}</span>'
+                    for a, b in zip(pi_en["interests"], pi_zh["interests"]))
+    interests_block = f'''      <div class="cv-block">
+        {pair("h3", "cv-block-title", pi_en["interests_title"], pi_zh["interests_title"])}
+        <div class="pi-tags">{tags}</div>
+      </div>''' if pi_en.get("interests") else ""
+
+    def cv_rows(list_en, list_zh, main_key, sub_key):
+        rows = []
+        for a, b in zip(list_en, list_zh):
+            sub = ""
+            if a.get(sub_key):
+                sub = (f'\n            <p class="tt-venue" data-en>{esc(a[sub_key])}</p>'
+                       f'\n            <p class="tt-venue" data-zh>{esc(b[sub_key])}</p>')
+            rows.append(f'''        <div class="tt-item">
+          <span class="tt-lead">{esc(a.get("years", ""))}</span>
+          <div>
+            <p class="tt-title" data-en>{esc(a[main_key])}</p>
+            <p class="tt-title" data-zh>{esc(b[main_key])}</p>{sub}
+          </div>
+        </div>''')
+        return "\n".join(rows)
+
+    edu_block = f'''      <div class="cv-block">
+        {pair("h3", "cv-block-title", pi_en["education_title"], pi_zh["education_title"])}
+{cv_rows(pi_en["education"], pi_zh["education"], "degree", "place")}
+      </div>''' if pi_en.get("education") else ""
+
+    exp_block = f'''      <div class="cv-block">
+        {pair("h3", "cv-block-title", pi_en["experience_title"], pi_zh["experience_title"])}
+{cv_rows(pi_en["experience"], pi_zh["experience"], "role", "place")}
+      </div>''' if pi_en.get("experience") else ""
+
+    detail = "\n\n".join(b for b in (interests_block, edu_block, exp_block) if b)
+
     return f'''  <section class="people pi-page" id="pi">
     <div class="container">
       {pair("p", "eyebrow", pi_en["eyebrow"], pi_zh["eyebrow"])}
@@ -276,6 +313,8 @@ def build_pi(en, zh):
           <div class="pi-links">{links}</div>
         </div>
       </div>
+
+{detail}
     </div>
   </section>'''
 
@@ -334,18 +373,17 @@ def build_teaching(en, zh):
         else:
             lines = []
             for a, b in zip(rows_en, rows_zh):
-                if kind == "course":
-                    lead = esc(a.get("term", ""))
-                else:
-                    lead = esc(a.get("year", ""))
+                lead = esc(a.get("term", "")) if kind == "course" else esc(a.get("date", ""))
                 venue = ""
                 if a.get("venue"):
-                    venue = f' · <em>{esc(a["venue"])}</em>'
-                main = (f'<p class="tt-title" data-en>{esc(a["title"])}{venue}</p>\n'
-                        f'            <p class="tt-title" data-zh>{esc(b["title"])}{venue}</p>')
+                    venue = (f'\n            <p class="tt-venue" data-en>{esc(a["venue"])}</p>'
+                             f'\n            <p class="tt-venue" data-zh>{esc(b["venue"])}</p>')
                 lines.append(f'''        <div class="tt-item">
           <span class="tt-lead">{lead}</span>
-          <div>{main}</div>
+          <div>
+            <p class="tt-title" data-en>{esc(a["title"])}</p>
+            <p class="tt-title" data-zh>{esc(b["title"])}</p>{venue}
+          </div>
         </div>''')
             body = "\n".join(lines)
         return f'''      <div class="tt-block">

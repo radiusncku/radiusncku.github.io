@@ -260,7 +260,36 @@
         "href": "#"
       }
     ],
-    "eyebrow": "主持人"
+    "eyebrow": "主持人",
+    "interests_title": "研究興趣",
+    "interests": [
+      "都市韌性",
+      "災難資訊",
+      "人類移動與行為",
+      "基礎設施網路",
+      "永續發展"
+    ],
+    "education_title": "學歷",
+    "education": [
+      {
+        "years": "",
+        "degree": "博士，土木工程",
+        "place": "美國德州農工大學（Texas A&M University）"
+      }
+    ],
+    "experience_title": "經歷",
+    "experience": [
+      {
+        "years": "",
+        "role": "助理教授，土木工程學系",
+        "place": "國立成功大學"
+      },
+      {
+        "years": "",
+        "role": "博士後研究員",
+        "place": "美國德州農工大學"
+      }
+    ]
   },
   "people": {
     "eyebrow": "成員",
@@ -390,9 +419,37 @@
     "eyebrow": "教學",
     "title": "教學與邀請演講",
     "courses_title": "授課課程",
-    "courses": [],
+    "courses": [
+      {
+        "term": "Fall 2025, Fall 2026",
+        "title": "工程計劃管理"
+      },
+      {
+        "term": "Fall 2025, Fall 2026",
+        "title": "防災科技概論"
+      },
+      {
+        "term": "Spring 2026",
+        "title": "演算法與物件導向程式設計"
+      },
+      {
+        "term": "Spring 2026",
+        "title": "網路分析於土木工程的應用"
+      }
+    ],
     "talks_title": "邀請演講",
-    "talks": [],
+    "talks": [
+      {
+        "date": "2026.06.18",
+        "title": "數據驅動的交通基礎設施韌性規劃",
+        "venue": "高雄市捷運局（都會線（黃線）IV&V 案・115 年度第 2 季教育訓練）"
+      },
+      {
+        "date": "2026.04.13",
+        "title": "建構智慧韌性：數據視角下的災害、移動與基礎設施",
+        "venue": "國立臺灣大學土木工程學系"
+      }
+    ],
     "empty": "內容即將更新。"
   },
   "resources": {
