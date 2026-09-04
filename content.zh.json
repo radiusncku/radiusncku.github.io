@@ -1,150 +1,405 @@
 {
   "meta": {
-    "title": "RADIUS Lab · 成功大學土木工程學系",
-    "description": "RADIUS 實驗室 — 以資料、感測與計算打造韌性基礎設施。國立成功大學土木工程學系。"
+    "title": "RADIUS Lab @ NCKU",
+    "description": "RADIUS 實驗室（成功大學土木工程學系）——在基礎設施與人類行為的交會處，以數據分析與災難資訊打造都市韌性。"
   },
   "nav": {
+    "about": "關於",
     "research": "研究",
     "publications": "著作",
     "people": "成員",
     "news": "消息",
     "lang_button": "EN",
-    "join": "加入"
+    "join": "加入我們",
+    "pi": "主持人",
+    "teaching": "教學",
+    "resources": "資源"
   },
   "hero": {
-    "eyebrow": "國立成功大學 土木工程學系",
-    "title_before": "韌性城市，是",
-    "title_accent": "工程",
-    "title_after": "打造的成果。",
-    "subtitle": "RADIUS 實驗室發展資料、模型與感測技術，讓基礎設施在變動的世界中承受各種災害。",
+    "eyebrow": "韌性 · 數據分析 · 災害 · 基礎設施 · 都市系統",
+    "title_before": "以工程打造",
+    "title_accent": "韌性",
+    "title_after": "。",
+    "subtitle": "擴大韌性的半徑",
     "btn_primary": "探索研究",
-    "btn_secondary": "研究著作"
+    "btn_secondary": "關於實驗室"
+  },
+  "about": {
+    "eyebrow": "關於",
+    "title": "基礎設施與人類行為的交會處",
+    "p1": "RADIUS 實驗室的研究，落在建成環境與人類行為交會的地方。我們運用都市資訊學與數據分析，探討複雜的基礎設施系統在壓力下如何反應——從技術上的連鎖失效，到災害當下人們真實的行為反應。",
+    "p2": "我們銜接資料科學與土木工程，打造讓城市不只穩健、更能「反脆弱」的計算框架。我們在意的是影響的「半徑」：一個失效如何在網路中擴散，而一次精準、以資料驅動的介入，又能如何守護整座城市。"
   },
   "research": {
     "eyebrow": "研究方向",
     "items": [
       {
         "num": "01",
-        "title": "基礎設施韌性",
-        "desc": "建立橋梁、管線與網路在極端事件下劣化與復原的模型。"
+        "title": "災難資訊",
+        "desc": "將原始資料轉化為緊急應變與復原所需的決策情報。"
       },
       {
         "num": "02",
-        "title": "結構健康監測",
-        "desc": "將感測資料轉化為結構變化與風險的早期、可行動訊號。"
+        "title": "都市韌性",
+        "desc": "分析城市如何吸收衝擊、復原，以及最脆弱的環節所在。"
       },
       {
         "num": "03",
-        "title": "災害與氣候風險",
-        "desc": "量化地震、洪水與氣候變遷如何重塑基礎設施的風險。"
+        "title": "人類行為動態",
+        "desc": "解析人們在都市風險變動下如何移動、決策與調適。"
+      },
+      {
+        "num": "04",
+        "title": "基礎設施系統",
+        "desc": "追蹤失效如何在網路中傳遞，以及如何阻止其連鎖擴散。"
+      },
+      {
+        "num": "05",
+        "title": "永續發展",
+        "desc": "讓今日的解決方案，不犧牲明日的安全與資源。"
       }
     ]
   },
   "publications": {
-    "eyebrow": "代表著作",
-    "title": "近期研究",
-    "items": [
+    "eyebrow": "著作",
+    "title": "研究著作",
+    "more": "在 Google Scholar 查看全部 →",
+    "more_href": "https://scholar.google.com/citations?hl=en&user=QJc1UyIAAAAJ",
+    "groups": [
       {
-        "year": "2025",
-        "title": "老化橋梁網路的資料驅動韌性評估",
-        "authors": "C.-W. Hsu et al.",
-        "journal": "Structural Safety",
-        "links": [
-          { "label": "PDF", "href": "#" },
-          { "label": "Code", "href": "#" },
-          { "label": "DOI", "href": "#" }
+        "title": "期刊論文（同儕審查）",
+        "items": [
+          {
+            "year": "2026",
+            "title": "Roadmap Towards Responsible AI in Crisis Resilience and Management",
+            "authors": "C.-C. Lee, T. Comes, M. Finn, H. Pak, C.-W. Hsu & A. Mostafavi",
+            "journal": "IEEE Access",
+            "links": [
+              {
+                "label": "DOI",
+                "href": "https://doi.org/10.1109/ACCESS.2026.3651368"
+              }
+            ]
+          },
+          {
+            "year": "2025",
+            "title": "Spillover effects of built-environment vulnerability on resilience of businesses in urban crises",
+            "authors": "C.-W. Hsu, C.-F. Liu, L. Stearns, S. Brody & A. Mostafavi",
+            "journal": "Sustainable Cities and Society",
+            "links": [
+              {
+                "label": "DOI",
+                "href": "https://doi.org/10.1016/j.scs.2025.106376"
+              }
+            ]
+          },
+          {
+            "year": "2025",
+            "title": "Dynamics of post-disaster recovery in behavior-dependent business networks",
+            "authors": "C.-F. Liu, C.-W. Hsu & A. Mostafavi",
+            "journal": "Humanities & Social Sciences Communications",
+            "links": [
+              {
+                "label": "DOI",
+                "href": "https://doi.org/10.1057/s41599-025-06092-0"
+              }
+            ]
+          },
+          {
+            "year": "2025",
+            "title": "Dissecting resilience curve archetypes and properties in human systems facing weather hazards",
+            "authors": "C.-W. Hsu & A. Mostafavi",
+            "journal": "Scientific Reports",
+            "links": [
+              {
+                "label": "DOI",
+                "href": "https://doi.org/10.1038/s41598-025-95909-8"
+              }
+            ]
+          },
+          {
+            "year": "2025",
+            "title": "Leveraging heterogeneous data and machine learning for mapping connectivity and infrastructure provision in Amazon",
+            "authors": "C.-W. Hsu, C. Liu, E. Ivarsson, L. Sekerinska & A. Mostafavi",
+            "journal": "Environmental Research: Infrastructure and Sustainability",
+            "links": [
+              {
+                "label": "DOI",
+                "href": "https://doi.org/10.1088/2634-4505/ae0f4f"
+              }
+            ]
+          },
+          {
+            "year": "2024",
+            "title": "Do human mobility network analyses produced from different location-based data sources yield similar results across scales?",
+            "authors": "C.-W. Hsu, C. Liu, K. M. Nguyen, Y.-H. Chien & A. Mostafavi",
+            "journal": "Computers, Environment and Urban Systems",
+            "links": []
+          },
+          {
+            "year": "2024",
+            "title": "Unraveling extreme weather impacts on air transportation and passenger delays using location-based data",
+            "authors": "C.-W. Hsu, C. Liu, Z. Liu & A. Mostafavi",
+            "journal": "Data Science for Transportation",
+            "links": []
+          },
+          {
+            "year": "2024",
+            "title": "Mobility behaviors shift disparity in flood exposure in US population groups",
+            "authors": "B. Li, C. Fan, Y.-H. Chien, C.-W. Hsu & A. Mostafavi",
+            "journal": "International Journal of Disaster Risk Reduction",
+            "links": []
+          },
+          {
+            "year": "2024",
+            "title": "Untangling the relationship between power outage and population activity recovery in disasters",
+            "authors": "C.-W. Hsu & A. Mostafavi",
+            "journal": "Resilient Cities and Structures",
+            "links": []
+          },
+          {
+            "year": "2024",
+            "title": "Integrating climate projections and probabilistic network analysis into regional transport resilience planning",
+            "authors": "H. Farahmand, K. Yin, C.-W. Hsu, I. Savadogo, X. Espinet Alegre & A. Mostafavi",
+            "journal": "Transportation Research Part D: Transport and Environment",
+            "links": []
+          },
+          {
+            "year": "2023",
+            "title": "Human mobility networks manifest dissimilar resilience characteristics at macroscopic, substructure, and microscopic scales",
+            "authors": "C.-W. Hsu, M. A. Ho & A. Mostafavi",
+            "journal": "Scientific Reports",
+            "links": []
+          },
+          {
+            "year": "2022",
+            "title": "Operationalizing resilience practices in transportation infrastructure planning and project development",
+            "authors": "A. Esmalian, F. Yuan, A. A. Rajput, H. Farahmand, C.-W. Hsu, et al.",
+            "journal": "Transportation Research Part D: Transport and Environment",
+            "links": []
+          },
+          {
+            "year": "2022",
+            "title": "Quantitative measures for integrating resilience into transportation planning practice: Study in Texas",
+            "authors": "C.-C. Lee, A. A. Rajput, C.-W. Hsu, C. Fan, et al.",
+            "journal": "Transportation Research Part D: Transport and Environment",
+            "links": []
+          },
+          {
+            "year": "2021",
+            "title": "Analysis of waiting time perception of bus passengers provided with mobile service",
+            "authors": "P.-C. Wang, Y.-T. Hsu & C.-W. Hsu",
+            "journal": "Transportation Research Part A: Policy and Practice",
+            "links": []
+          }
         ]
       },
       {
-        "year": "2024",
-        "title": "結合物理知識的結構健康監測學習方法",
-        "authors": "C.-W. Hsu et al.",
-        "journal": "Mechanical Systems & Signal Processing",
-        "links": [
-          { "label": "PDF", "href": "#" },
-          { "label": "Code", "href": "#" },
-          { "label": "DOI", "href": "#" }
+        "title": "會議論文與海報",
+        "items": [
+          {
+            "year": "2023",
+            "title": "Integrating Quantitative Resilience Measures into Transportation Planning Practice: Study in Texas",
+            "authors": "C.-W. Hsu, A. A. Rajput, C.-C. Lee & A. Mostafavi",
+            "journal": "Transportation Research Board 102nd Annual Meeting",
+            "links": []
+          },
+          {
+            "year": "2022",
+            "title": "Multi-dimensional Resilience Assessment of Road Infrastructure Networks",
+            "authors": "C.-W. Hsu, A. A. Rajput & A. Mostafavi",
+            "journal": "Lifelines 2021–2022 Conference",
+            "links": []
+          },
+          {
+            "year": "2019",
+            "title": "Exploring the Propagation Pattern of Traffic Congestion through Analyzing and Visualizing Vehicle Detector Data",
+            "authors": "C.-W. Hsu & Y.-T. Hsu",
+            "journal": "World Conference on Transport Research 2019",
+            "links": []
+          }
         ]
       },
       {
-        "year": "2024",
-        "title": "震後基礎設施復原的數位孿生",
-        "authors": "C.-W. Hsu et al.",
-        "journal": "Earthquake Engineering & Structural Dynamics",
-        "links": [
-          { "label": "PDF", "href": "#" },
-          { "label": "DOI", "href": "#" }
-        ]
-      },
-      {
-        "year": "2023",
-        "title": "環境變異下的貝氏損傷偵測",
-        "authors": "C.-W. Hsu et al.",
-        "journal": "Journal of Sound and Vibration",
-        "links": [
-          { "label": "PDF", "href": "#" },
-          { "label": "DOI", "href": "#" }
+        "title": "技術報告",
+        "items": [
+          {
+            "year": "2023",
+            "title": "Establish TxDOT Transportation Resilience Planning Scorecard and Best Practices: Technical Report",
+            "authors": "A. Mostafavi, C.-C. Lee, C. Fan, A. Rajput, C.-W. Hsu, et al.",
+            "journal": "Texas Department of Transportation",
+            "links": []
+          },
+          {
+            "year": "2022",
+            "title": "Establish TxDOT Transportation Resilience Planning Scorecard and Best Practices — Project Status Meeting (Project Summary)",
+            "authors": "A. Mostafavi, F. Yuan, C.-C. Lee, et al.",
+            "journal": "Texas Department of Transportation",
+            "links": []
+          }
         ]
       }
+    ]
+  },
+  "pi": {
+    "photo": "",
+    "name": "許家維",
+    "role": "主持人 · 助理教授",
+    "bio": "許家維為國立成功大學土木工程學系助理教授，主持 RADIUS 實驗室。研究結合土木工程、都市資訊學與資料科學，探討城市以及其中的人們如何承受災害並從中復原，涵蓋都市韌性、人類移動行為、災難資訊與基礎設施網路。先前於美國德州農工大學（Texas A&M University）從事博士後研究。",
+    "links": [
+      {
+        "label": "Google Scholar",
+        "href": "https://scholar.google.com/citations?hl=en&user=QJc1UyIAAAAJ"
+      },
+      {
+        "label": "Email",
+        "href": "mailto:chiaweihsu@gs.ncku.edu.tw"
+      },
+      {
+        "label": "CV",
+        "href": "#"
+      }
     ],
-    "more": "查看所有著作 →"
+    "eyebrow": "主持人"
   },
   "people": {
     "eyebrow": "成員",
     "title": "研究團隊",
-    "pi": {
-      "photo": "",
-      "name": "許家維",
-      "role": "主持人 · 助理教授",
-      "bio": "許家維為國立成功大學土木工程學系助理教授，主持 RADIUS 實驗室。研究橫跨結構工程、感測技術與資料科學，致力於提升基礎設施面對天然災害的韌性。",
-      "links": [
-        { "label": "Google Scholar", "href": "#" },
-        { "label": "Email", "href": "#" },
-        { "label": "CV", "href": "#" }
-      ]
-    },
-    "members": [
-      { "photo": "", "name": "Yu-Hsuan Lin", "role": "博士後研究員" },
-      { "photo": "", "name": "Cheng-Hao Wu", "role": "博士生" },
-      { "photo": "", "name": "Mei-Ling Chen", "role": "博士生" },
-      { "photo": "", "name": "Po-Yu Huang", "role": "碩士生" },
-      { "photo": "", "name": "Hsin-Yi Tsai", "role": "碩士生" },
-      { "photo": "", "name": "Daniel Reyes", "role": "訪問學者" }
+    "groups": [
+      {
+        "title": "博士生",
+        "members": [
+          {
+            "photo": "",
+            "name": "穆海珊",
+            "cohort": "202X–202X",
+            "note": "RADIUS 實驗室研究生。"
+          }
+        ]
+      },
+      {
+        "title": "碩士生",
+        "members": [
+          {
+            "photo": "",
+            "name": "黃冠予",
+            "cohort": "202X–202X",
+            "note": "RADIUS 實驗室研究生。"
+          },
+          {
+            "photo": "",
+            "name": "達菲娜",
+            "cohort": "202X–202X",
+            "note": "RADIUS 實驗室研究生。"
+          },
+          {
+            "photo": "",
+            "name": "張庭瑄",
+            "cohort": "202X–202X",
+            "note": "RADIUS 實驗室研究生。"
+          },
+          {
+            "photo": "",
+            "name": "廖煜程",
+            "cohort": "202X–202X",
+            "note": "RADIUS 實驗室研究生。"
+          },
+          {
+            "photo": "",
+            "name": "江毅浩",
+            "cohort": "202X–202X",
+            "note": "RADIUS 實驗室研究生。"
+          }
+        ]
+      },
+      {
+        "title": "大學部學生",
+        "members": []
+      },
+      {
+        "title": "畢業生",
+        "members": []
+      }
     ]
   },
   "news": {
     "eyebrow": "最新消息",
     "title": "近期動態",
     "items": [
-      { "date": "2026.06", "text": "RADIUS 獲得新計畫補助，研究韌性橋梁網路。" },
-      { "date": "2026.05", "text": "歡迎兩位新進研究生加入實驗室。" },
-      { "date": "2026.03", "text": "結合物理知識的監測論文獲 MSSP 接受刊登。" },
-      { "date": "2026.01", "text": "許家維於全國地震工程研討會發表邀請演講。" }
+      {
+        "date": "2026.06",
+        "text": "RADIUS 獲得新計畫補助，研究韌性橋梁網路。"
+      },
+      {
+        "date": "2026.05",
+        "text": "歡迎兩位新進研究生加入實驗室。"
+      },
+      {
+        "date": "2026.03",
+        "text": "結合物理知識的監測論文獲 MSSP 接受刊登。"
+      },
+      {
+        "date": "2026.01",
+        "text": "許家維於全國地震工程研討會發表邀請演講。"
+      }
     ]
   },
   "join": {
     "eyebrow": "加入我們",
     "title": "我們正在尋找喜歡挑戰難題、充滿好奇心的夥伴。",
-    "text": "歡迎土木工程、力學與資料科學領域的準研究生、博士後與大學部同學加入。若你對我們的研究主題感興趣，歡迎與我們聯絡。",
-    "email": "joe.hsu@gs.ncku.edu.tw",
-    "positions": "開放職缺"
+    "text": "歡迎土木工程、都市計畫、資料科學及相關領域的準研究生、博士後與大學部同學加入。若你對我們的研究主題感興趣，歡迎與我們聯絡。",
+    "email": "chiaweihsu@gs.ncku.edu.tw",
+    "note": "目前招收碩士與博士生。"
   },
   "footer": {
     "brand": "RADIUS",
     "address": "國立成功大學 土木工程學系\n70101 台南市東區大學路一號",
     "explore_title": "瀏覽",
     "explore_links": [
-      { "label": "研究", "href": "#research" },
-      { "label": "著作", "href": "#publications" },
-      { "label": "成員", "href": "#people" },
-      { "label": "加入我們", "href": "#join" }
+      {
+        "label": "關於",
+        "href": "index.html#about"
+      },
+      {
+        "label": "研究",
+        "href": "index.html#research"
+      },
+      {
+        "label": "著作",
+        "href": "publications.html"
+      },
+      {
+        "label": "加入我們",
+        "href": "index.html#join"
+      }
     ],
-    "elsewhere_title": "其他連結",
+    "elsewhere_title": "隸屬單位",
     "elsewhere_links": [
-      { "label": "Google Scholar", "href": "#" },
-      { "label": "GitHub", "href": "#" },
-      { "label": "Bluesky", "href": "#" }
+      {
+        "label": "國立成功大學",
+        "href": "https://www.ncku.edu.tw/"
+      },
+      {
+        "label": "土木工程學系",
+        "href": "https://www.civil.ncku.edu.tw/"
+      }
     ],
-    "copyright": "© 2026 RADIUS Lab · National Cheng Kung University"
+    "copyright": "© 2026 RADIUS Lab @ NCKU · National Cheng Kung University"
+  },
+  "teaching": {
+    "eyebrow": "教學",
+    "title": "教學與邀請演講",
+    "courses_title": "授課課程",
+    "courses": [],
+    "talks_title": "邀請演講",
+    "talks": [],
+    "empty": "內容即將更新。"
+  },
+  "resources": {
+    "eyebrow": "資源",
+    "title": "資源",
+    "intro": "",
+    "items": [],
+    "empty": "資源即將更新。"
   }
 }

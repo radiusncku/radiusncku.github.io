@@ -1,150 +1,405 @@
 {
   "meta": {
-    "title": "RADIUS Lab · NCKU Civil Engineering",
-    "description": "RADIUS Lab — resilient infrastructure through data, sensing, and computation. Department of Civil Engineering, National Cheng Kung University."
+    "title": "RADIUS Lab @ NCKU",
+    "description": "RADIUS Lab @ NCKU — engineering urban resilience where infrastructure meets human behavior, through data analytics and disaster informatics. Department of Civil Engineering, National Cheng Kung University."
   },
   "nav": {
+    "about": "About",
     "research": "Research",
     "publications": "Publications",
     "people": "People",
     "news": "News",
     "lang_button": "中文",
-    "join": "Join us"
+    "join": "Join us",
+    "pi": "PI",
+    "teaching": "Teaching",
+    "resources": "Resources"
   },
   "hero": {
-    "eyebrow": "NCKU Civil Engineering",
-    "title_before": "Resilient cities are ",
-    "title_accent": "engineered",
-    "title_after": ", not hoped for.",
-    "subtitle": "RADIUS builds the data, models, and sensing that let infrastructure survive the hazards of a changing world.",
+    "eyebrow": "Resilience · Analytics · Disaster · Infrastructure · Urban Systems",
+    "title_before": "Engineering ",
+    "title_accent": "Resilience",
+    "title_after": ".",
+    "subtitle": "Expanding the reach of resilience",
     "btn_primary": "Explore research",
-    "btn_secondary": "Publications"
+    "btn_secondary": "About the lab"
+  },
+  "about": {
+    "eyebrow": "About",
+    "title": "Where infrastructure meets human behavior",
+    "p1": "RADIUS works where the built environment meets human behavior. Using urban informatics and data analytics, we study how complex infrastructure systems respond under stress — from cascading technical failures to how people actually behave during a disaster.",
+    "p2": "Bridging data science and civil engineering, we build the computational frameworks for cities that are not just robust, but antifragile. We care about reach: how a single failure propagates through a network, and how a single data-driven intervention can safeguard an entire city."
   },
   "research": {
     "eyebrow": "Research",
     "items": [
       {
         "num": "01",
-        "title": "Infrastructure resilience",
-        "desc": "Modeling how bridges, pipelines, and networks degrade and recover under extreme events."
+        "title": "Disaster informatics",
+        "desc": "Turning raw data into actionable intelligence for emergency response and recovery."
       },
       {
         "num": "02",
-        "title": "Structural health monitoring",
-        "desc": "Turning sensor data into early, actionable signals of structural change and risk."
+        "title": "Urban resilience",
+        "desc": "Analyzing how cities absorb shocks, recover, and where they remain most fragile."
       },
       {
         "num": "03",
-        "title": "Hazard & climate risk",
-        "desc": "Quantifying how earthquakes, floods, and a changing climate reshape infrastructure risk."
+        "title": "Human dynamics",
+        "desc": "Decoding how people move, decide, and adapt as urban risks shift around them."
+      },
+      {
+        "num": "04",
+        "title": "Infrastructure systems",
+        "desc": "Tracing how failures spread through networks — and how to stop them from cascading."
+      },
+      {
+        "num": "05",
+        "title": "Sustainable development",
+        "desc": "Designing today's solutions so they don't compromise tomorrow's safety and resources."
       }
     ]
   },
   "publications": {
-    "eyebrow": "Selected publications",
-    "title": "Recent work",
-    "items": [
+    "eyebrow": "Publications",
+    "title": "Publications",
+    "more": "View all on Google Scholar →",
+    "more_href": "https://scholar.google.com/citations?hl=en&user=QJc1UyIAAAAJ",
+    "groups": [
       {
-        "year": "2025",
-        "title": "Data-driven resilience assessment of aging bridge networks",
-        "authors": "C.-W. Hsu et al.",
-        "journal": "Structural Safety",
-        "links": [
-          { "label": "PDF", "href": "#" },
-          { "label": "Code", "href": "#" },
-          { "label": "DOI", "href": "#" }
+        "title": "Peer-reviewed journal papers",
+        "items": [
+          {
+            "year": "2026",
+            "title": "Roadmap Towards Responsible AI in Crisis Resilience and Management",
+            "authors": "C.-C. Lee, T. Comes, M. Finn, H. Pak, C.-W. Hsu & A. Mostafavi",
+            "journal": "IEEE Access",
+            "links": [
+              {
+                "label": "DOI",
+                "href": "https://doi.org/10.1109/ACCESS.2026.3651368"
+              }
+            ]
+          },
+          {
+            "year": "2025",
+            "title": "Spillover effects of built-environment vulnerability on resilience of businesses in urban crises",
+            "authors": "C.-W. Hsu, C.-F. Liu, L. Stearns, S. Brody & A. Mostafavi",
+            "journal": "Sustainable Cities and Society",
+            "links": [
+              {
+                "label": "DOI",
+                "href": "https://doi.org/10.1016/j.scs.2025.106376"
+              }
+            ]
+          },
+          {
+            "year": "2025",
+            "title": "Dynamics of post-disaster recovery in behavior-dependent business networks",
+            "authors": "C.-F. Liu, C.-W. Hsu & A. Mostafavi",
+            "journal": "Humanities & Social Sciences Communications",
+            "links": [
+              {
+                "label": "DOI",
+                "href": "https://doi.org/10.1057/s41599-025-06092-0"
+              }
+            ]
+          },
+          {
+            "year": "2025",
+            "title": "Dissecting resilience curve archetypes and properties in human systems facing weather hazards",
+            "authors": "C.-W. Hsu & A. Mostafavi",
+            "journal": "Scientific Reports",
+            "links": [
+              {
+                "label": "DOI",
+                "href": "https://doi.org/10.1038/s41598-025-95909-8"
+              }
+            ]
+          },
+          {
+            "year": "2025",
+            "title": "Leveraging heterogeneous data and machine learning for mapping connectivity and infrastructure provision in Amazon",
+            "authors": "C.-W. Hsu, C. Liu, E. Ivarsson, L. Sekerinska & A. Mostafavi",
+            "journal": "Environmental Research: Infrastructure and Sustainability",
+            "links": [
+              {
+                "label": "DOI",
+                "href": "https://doi.org/10.1088/2634-4505/ae0f4f"
+              }
+            ]
+          },
+          {
+            "year": "2024",
+            "title": "Do human mobility network analyses produced from different location-based data sources yield similar results across scales?",
+            "authors": "C.-W. Hsu, C. Liu, K. M. Nguyen, Y.-H. Chien & A. Mostafavi",
+            "journal": "Computers, Environment and Urban Systems",
+            "links": []
+          },
+          {
+            "year": "2024",
+            "title": "Unraveling extreme weather impacts on air transportation and passenger delays using location-based data",
+            "authors": "C.-W. Hsu, C. Liu, Z. Liu & A. Mostafavi",
+            "journal": "Data Science for Transportation",
+            "links": []
+          },
+          {
+            "year": "2024",
+            "title": "Mobility behaviors shift disparity in flood exposure in US population groups",
+            "authors": "B. Li, C. Fan, Y.-H. Chien, C.-W. Hsu & A. Mostafavi",
+            "journal": "International Journal of Disaster Risk Reduction",
+            "links": []
+          },
+          {
+            "year": "2024",
+            "title": "Untangling the relationship between power outage and population activity recovery in disasters",
+            "authors": "C.-W. Hsu & A. Mostafavi",
+            "journal": "Resilient Cities and Structures",
+            "links": []
+          },
+          {
+            "year": "2024",
+            "title": "Integrating climate projections and probabilistic network analysis into regional transport resilience planning",
+            "authors": "H. Farahmand, K. Yin, C.-W. Hsu, I. Savadogo, X. Espinet Alegre & A. Mostafavi",
+            "journal": "Transportation Research Part D: Transport and Environment",
+            "links": []
+          },
+          {
+            "year": "2023",
+            "title": "Human mobility networks manifest dissimilar resilience characteristics at macroscopic, substructure, and microscopic scales",
+            "authors": "C.-W. Hsu, M. A. Ho & A. Mostafavi",
+            "journal": "Scientific Reports",
+            "links": []
+          },
+          {
+            "year": "2022",
+            "title": "Operationalizing resilience practices in transportation infrastructure planning and project development",
+            "authors": "A. Esmalian, F. Yuan, A. A. Rajput, H. Farahmand, C.-W. Hsu, et al.",
+            "journal": "Transportation Research Part D: Transport and Environment",
+            "links": []
+          },
+          {
+            "year": "2022",
+            "title": "Quantitative measures for integrating resilience into transportation planning practice: Study in Texas",
+            "authors": "C.-C. Lee, A. A. Rajput, C.-W. Hsu, C. Fan, et al.",
+            "journal": "Transportation Research Part D: Transport and Environment",
+            "links": []
+          },
+          {
+            "year": "2021",
+            "title": "Analysis of waiting time perception of bus passengers provided with mobile service",
+            "authors": "P.-C. Wang, Y.-T. Hsu & C.-W. Hsu",
+            "journal": "Transportation Research Part A: Policy and Practice",
+            "links": []
+          }
         ]
       },
       {
-        "year": "2024",
-        "title": "Physics-informed learning for structural health monitoring",
-        "authors": "C.-W. Hsu et al.",
-        "journal": "Mechanical Systems & Signal Processing",
-        "links": [
-          { "label": "PDF", "href": "#" },
-          { "label": "Code", "href": "#" },
-          { "label": "DOI", "href": "#" }
+        "title": "Conference papers & posters",
+        "items": [
+          {
+            "year": "2023",
+            "title": "Integrating Quantitative Resilience Measures into Transportation Planning Practice: Study in Texas",
+            "authors": "C.-W. Hsu, A. A. Rajput, C.-C. Lee & A. Mostafavi",
+            "journal": "Transportation Research Board 102nd Annual Meeting",
+            "links": []
+          },
+          {
+            "year": "2022",
+            "title": "Multi-dimensional Resilience Assessment of Road Infrastructure Networks",
+            "authors": "C.-W. Hsu, A. A. Rajput & A. Mostafavi",
+            "journal": "Lifelines 2021–2022 Conference",
+            "links": []
+          },
+          {
+            "year": "2019",
+            "title": "Exploring the Propagation Pattern of Traffic Congestion through Analyzing and Visualizing Vehicle Detector Data",
+            "authors": "C.-W. Hsu & Y.-T. Hsu",
+            "journal": "World Conference on Transport Research 2019",
+            "links": []
+          }
         ]
       },
       {
-        "year": "2024",
-        "title": "Digital twins for post-earthquake infrastructure recovery",
-        "authors": "C.-W. Hsu et al.",
-        "journal": "Earthquake Engineering & Structural Dynamics",
-        "links": [
-          { "label": "PDF", "href": "#" },
-          { "label": "DOI", "href": "#" }
-        ]
-      },
-      {
-        "year": "2023",
-        "title": "Bayesian damage detection under environmental variability",
-        "authors": "C.-W. Hsu et al.",
-        "journal": "Journal of Sound and Vibration",
-        "links": [
-          { "label": "PDF", "href": "#" },
-          { "label": "DOI", "href": "#" }
+        "title": "Technical reports",
+        "items": [
+          {
+            "year": "2023",
+            "title": "Establish TxDOT Transportation Resilience Planning Scorecard and Best Practices: Technical Report",
+            "authors": "A. Mostafavi, C.-C. Lee, C. Fan, A. Rajput, C.-W. Hsu, et al.",
+            "journal": "Texas Department of Transportation",
+            "links": []
+          },
+          {
+            "year": "2022",
+            "title": "Establish TxDOT Transportation Resilience Planning Scorecard and Best Practices — Project Status Meeting (Project Summary)",
+            "authors": "A. Mostafavi, F. Yuan, C.-C. Lee, et al.",
+            "journal": "Texas Department of Transportation",
+            "links": []
+          }
         ]
       }
+    ]
+  },
+  "pi": {
+    "photo": "",
+    "name": "Chia-Wei Hsu",
+    "role": "Principal Investigator · Assistant Professor",
+    "bio": "Chia-Wei Hsu is an Assistant Professor in the Department of Civil Engineering at National Cheng Kung University, where he leads the RADIUS Lab. His research combines civil engineering with urban informatics and data science to study how cities — and the people in them — withstand and recover from disasters, spanning urban resilience, human mobility, disaster informatics, and infrastructure networks. He previously conducted postdoctoral research at Texas A&M University.",
+    "links": [
+      {
+        "label": "Google Scholar",
+        "href": "https://scholar.google.com/citations?hl=en&user=QJc1UyIAAAAJ"
+      },
+      {
+        "label": "Email",
+        "href": "mailto:chiaweihsu@gs.ncku.edu.tw"
+      },
+      {
+        "label": "CV",
+        "href": "#"
+      }
     ],
-    "more": "View all publications →"
+    "eyebrow": "Principal Investigator"
   },
   "people": {
     "eyebrow": "People",
     "title": "The team",
-    "pi": {
-      "photo": "",
-      "name": "Chia-Wei (Joe) Hsu",
-      "role": "Principal Investigator · Assistant Professor",
-      "bio": "Joe leads RADIUS in the Department of Civil Engineering at National Cheng Kung University. His group works at the intersection of structural engineering, sensing, and data science to make infrastructure more resilient to natural hazards.",
-      "links": [
-        { "label": "Google Scholar", "href": "#" },
-        { "label": "Email", "href": "#" },
-        { "label": "CV", "href": "#" }
-      ]
-    },
-    "members": [
-      { "photo": "", "name": "Yu-Hsuan Lin", "role": "Postdoctoral Researcher" },
-      { "photo": "", "name": "Cheng-Hao Wu", "role": "PhD Student" },
-      { "photo": "", "name": "Mei-Ling Chen", "role": "PhD Student" },
-      { "photo": "", "name": "Po-Yu Huang", "role": "MS Student" },
-      { "photo": "", "name": "Hsin-Yi Tsai", "role": "MS Student" },
-      { "photo": "", "name": "Daniel Reyes", "role": "Visiting Researcher" }
+    "groups": [
+      {
+        "title": "PhD Students",
+        "members": [
+          {
+            "photo": "",
+            "name": "Ahmed Mohamed Hussein",
+            "cohort": "202X–202X",
+            "note": "Graduate researcher at the RADIUS Lab."
+          }
+        ]
+      },
+      {
+        "title": "Master's Students",
+        "members": [
+          {
+            "photo": "",
+            "name": "",
+            "cohort": "202X–202X",
+            "note": "Graduate researcher at the RADIUS Lab."
+          },
+          {
+            "photo": "",
+            "name": "Davina Adinda",
+            "cohort": "202X–202X",
+            "note": "Graduate researcher at the RADIUS Lab."
+          },
+          {
+            "photo": "",
+            "name": "",
+            "cohort": "202X–202X",
+            "note": "Graduate researcher at the RADIUS Lab."
+          },
+          {
+            "photo": "",
+            "name": "",
+            "cohort": "202X–202X",
+            "note": "Graduate researcher at the RADIUS Lab."
+          },
+          {
+            "photo": "",
+            "name": "",
+            "cohort": "202X–202X",
+            "note": "Graduate researcher at the RADIUS Lab."
+          }
+        ]
+      },
+      {
+        "title": "Undergraduate Students",
+        "members": []
+      },
+      {
+        "title": "Alumni",
+        "members": []
+      }
     ]
   },
   "news": {
     "eyebrow": "News",
     "title": "Recent updates",
     "items": [
-      { "date": "2026.06", "text": "RADIUS is awarded a new grant to study resilient bridge networks." },
-      { "date": "2026.05", "text": "Welcome to two new graduate students joining the lab." },
-      { "date": "2026.03", "text": "Our paper on physics-informed monitoring is accepted to MSSP." },
-      { "date": "2026.01", "text": "Joe gives an invited talk at the National Earthquake Engineering Symposium." }
+      {
+        "date": "2026.06",
+        "text": "RADIUS is awarded a new grant to study resilient bridge networks."
+      },
+      {
+        "date": "2026.05",
+        "text": "Welcome to two new graduate students joining the lab."
+      },
+      {
+        "date": "2026.03",
+        "text": "Our paper on physics-informed monitoring is accepted to MSSP."
+      },
+      {
+        "date": "2026.01",
+        "text": "Chia-Wei gives an invited talk at the National Earthquake Engineering Symposium."
+      }
     ]
   },
   "join": {
     "eyebrow": "Join us",
     "title": "We're looking for curious people who like hard problems.",
-    "text": "We welcome prospective graduate students, postdocs, and undergraduates from civil engineering, mechanics, and data science. If our questions excite you, get in touch.",
-    "email": "joe.hsu@gs.ncku.edu.tw",
-    "positions": "Open positions"
+    "text": "We welcome prospective graduate students, postdocs, and undergraduates from civil engineering, urban planning, data science, and related fields. If our questions excite you, get in touch.",
+    "email": "chiaweihsu@gs.ncku.edu.tw",
+    "note": "Currently accepting Master's and PhD students."
   },
   "footer": {
     "brand": "RADIUS",
     "address": "Department of Civil Engineering\nNational Cheng Kung University\nNo. 1, University Road, Tainan 70101, Taiwan",
     "explore_title": "Explore",
     "explore_links": [
-      { "label": "Research", "href": "#research" },
-      { "label": "Publications", "href": "#publications" },
-      { "label": "People", "href": "#people" },
-      { "label": "Join us", "href": "#join" }
+      {
+        "label": "About",
+        "href": "index.html#about"
+      },
+      {
+        "label": "Research",
+        "href": "index.html#research"
+      },
+      {
+        "label": "Publications",
+        "href": "publications.html"
+      },
+      {
+        "label": "Join us",
+        "href": "index.html#join"
+      }
     ],
-    "elsewhere_title": "Elsewhere",
+    "elsewhere_title": "Affiliation",
     "elsewhere_links": [
-      { "label": "Google Scholar", "href": "#" },
-      { "label": "GitHub", "href": "#" },
-      { "label": "Bluesky", "href": "#" }
+      {
+        "label": "National Cheng Kung University",
+        "href": "https://www.ncku.edu.tw/"
+      },
+      {
+        "label": "Department of Civil Engineering",
+        "href": "https://www.civil.ncku.edu.tw/"
+      }
     ],
-    "copyright": "© 2026 RADIUS Lab · National Cheng Kung University"
+    "copyright": "© 2026 RADIUS Lab @ NCKU · National Cheng Kung University"
+  },
+  "teaching": {
+    "eyebrow": "Teaching",
+    "title": "Teaching & Invited Talks",
+    "courses_title": "Courses",
+    "courses": [],
+    "talks_title": "Invited Talks",
+    "talks": [],
+    "empty": "Details coming soon."
+  },
+  "resources": {
+    "eyebrow": "Resources",
+    "title": "Resources",
+    "intro": "",
+    "items": [],
+    "empty": "Resources coming soon."
   }
 }
