@@ -2,7 +2,7 @@
 """
 build.py  --  multi-page site generator for the RADIUS Lab.
 
-You edit CONTENT in two data files (content.en.json / content.zh.json) and run:
+You edit CONTENT in two data files (content_en.json / content_zh.json) and run:
 
     python build.py
 
@@ -496,9 +496,19 @@ def page_body(en, zh, active, sections):
     return "\n\n".join(parts)
 
 
+def _find(*names):
+    """Return the first filename that exists, so the data files work whether
+    they are named content_en.json (underscore) or content.en.json (dot)."""
+    import os
+    for n in names:
+        if os.path.exists(n):
+            return n
+    return names[0]  # fall back to the first; load() will report if missing
+
+
 def main():
-    en = load("content.en.json")
-    zh = load("content.zh.json")
+    en = load(_find("content_en.json", "content.en.json"))
+    zh = load(_find("content_zh.json", "content.zh.json"))
     check_shape(en, zh)
 
     try:
