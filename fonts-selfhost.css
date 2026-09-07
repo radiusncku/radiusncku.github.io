@@ -1,0 +1,98 @@
+/* ============================================================
+   RADIUS Lab — 自架字體（選用，但建議做）
+   ------------------------------------------------------------
+   目的：讓網站在任何電腦、任何網路環境下，字體渲染完全一致。
+
+   現況的問題：字體從 fonts.googleapis.com 載入。這在多數情況沒問題，
+   但只要遇到校園網路阻擋、中國大陸連線、研討會現場網路不穩、或離線
+   展示，字體就會退回系統預設，畫面會跑掉。把字體檔放進自己的
+   倉庫，就沒有這個變數。
+
+   ------------------------------------------------------------
+   安裝步驟（做一次就好）
+
+   1. 到 https://gwfh.mranftl.com/fonts
+      分別搜尋 Archivo、Public Sans、IBM Plex Mono。
+      每一套：勾選下方列出的字重，Charsets 勾 latin + latin-ext，
+      下載 woff2。
+
+        Archivo        500 600 700 800
+        Public Sans    400 500 600 700
+        IBM Plex Mono  400 500
+
+   2. 在網站資料夾建立 fonts/ 子資料夾，把所有 .woff2 放進去。
+      檔名保持下載時的原名（下面的 url 就是照原名寫的）。
+
+   3. 在 template.html 的 <head> 裡，把原本那一行 Google Fonts 的
+      <link href="https://fonts.googleapis.com/css2?family=Archivo...">
+      改成下面兩行：
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="fonts-selfhost.css" />
+
+      （中文的 Noto Sans TC 仍留在 Google，原因見最下方說明。）
+
+   4. 執行 build.py，然後 Commit 時務必把 fonts/ 資料夾一起送出。
+   ============================================================ */
+
+/* ---------- Archivo：標題 ---------- */
+@font-face {
+  font-family: 'Archivo'; font-style: normal; font-weight: 500; font-display: swap;
+  src: url('fonts/archivo-v25-latin-500.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Archivo'; font-style: normal; font-weight: 600; font-display: swap;
+  src: url('fonts/archivo-v25-latin-600.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Archivo'; font-style: normal; font-weight: 700; font-display: swap;
+  src: url('fonts/archivo-v25-latin-700.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Archivo'; font-style: normal; font-weight: 800; font-display: swap;
+  src: url('fonts/archivo-v25-latin-800.woff2') format('woff2');
+}
+
+/* ---------- Public Sans：內文 ---------- */
+@font-face {
+  font-family: 'Public Sans'; font-style: normal; font-weight: 400; font-display: swap;
+  src: url('fonts/public-sans-v18-latin-regular.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Public Sans'; font-style: normal; font-weight: 500; font-display: swap;
+  src: url('fonts/public-sans-v18-latin-500.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Public Sans'; font-style: normal; font-weight: 600; font-display: swap;
+  src: url('fonts/public-sans-v18-latin-600.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Public Sans'; font-style: normal; font-weight: 700; font-display: swap;
+  src: url('fonts/public-sans-v18-latin-700.woff2') format('woff2');
+}
+
+/* ---------- IBM Plex Mono：標籤與數字 ---------- */
+@font-face {
+  font-family: 'IBM Plex Mono'; font-style: normal; font-weight: 400; font-display: swap;
+  src: url('fonts/ibm-plex-mono-v19-latin-regular.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'IBM Plex Mono'; font-style: normal; font-weight: 500; font-display: swap;
+  src: url('fonts/ibm-plex-mono-v19-latin-500.woff2') format('woff2');
+}
+
+/* ============================================================
+   為什麼中文字體不自架？
+
+   Noto Sans TC 涵蓋數萬個漢字，完整檔案每個字重約 5–10 MB。
+   Google 的 CDN 會自動把它切成上百個小片段，只下載頁面實際用到的
+   那幾片，所以載入很快。自己架就得自己做子集化（subsetting），
+   維護成本高，而且新增文字時容易漏字。
+
+   實務上的取捨：拉丁字體自架（檔案小、影響標題與整體版面骨架），
+   中文留在 CDN，並在 styles.css 的 --font-zh 裡排好備援
+   （PingFang TC → Microsoft JhengHei → Heiti TC）。即使 CDN 連不上，
+   中文也會落在 macOS / Windows 內建的黑體上，字重與比例接近，
+   不會變成明體或破圖。
+   ============================================================ */

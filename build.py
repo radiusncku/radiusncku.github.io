@@ -182,9 +182,22 @@ def build_hero(en, zh):
     title_zh = (f'{esc(h_zh["title_before"])}'
                 f'<span class="accent">{esc(h_zh["title_accent"])}</span>'
                 f'{esc(h_zh["title_after"])}')
+    # The acronym block: "who we are". Each part shows the letter of RADIUS
+    # and the word it stands for. Deliberately styled differently from the
+    # plain .eyebrow labels used elsewhere, which are section names.
+    parts = []
+    for a, b in zip(h_en["acronym"], h_zh["acronym"]):
+        parts.append(
+            f'<span class="acr-part">'
+            f'<span class="acr-letter">{esc(a["letter"])}</span>'
+            f'<span class="acr-word" data-en>{esc(a["word"])}</span>'
+            f'<span class="acr-word" data-zh>{esc(b["word"])}</span>'
+            f'</span>')
+    acronym = ('      <p class="acronym">\n        '
+               + '\n        '.join(parts) + '\n      </p>')
     return f'''  <section class="hero" id="top">
     <div class="container">
-      {pair("p", "eyebrow", h_en["eyebrow"], h_zh["eyebrow"])}
+{acronym}
       <h1 class="hero-title" data-en>{title_en}</h1>
       <h1 class="hero-title" data-zh>{title_zh}</h1>
       {pair("p", "hero-sub", h_en["subtitle"], h_zh["subtitle"])}
@@ -214,8 +227,11 @@ def build_research(en, zh):
     r_en, r_zh = en["research"], zh["research"]
     items = []
     for a, b in zip(r_en["items"], r_zh["items"]):
-        items.append(f'''      <div class="research-item">
-        <span class="research-num">{esc(a["num"])}</span>
+        # "num" is no longer printed. It now selects the area colour in
+        # styles.css via data-area, so each research direction keeps the same
+        # colour on the site, in slides, and on posters.
+        items.append(f'''      <div class="research-item" data-area="{esc(a["num"])}">
+        <span class="research-mark" aria-hidden="true"></span>
         <div class="research-body">
           <div>
             {pair("h3", "ri-title", a["title"], b["title"])}
@@ -228,6 +244,7 @@ def build_research(en, zh):
     return f'''  <section class="research" id="research">
     <div class="container">
       {pair("p", "eyebrow", r_en["eyebrow"], r_zh["eyebrow"])}
+      {pair("h2", "section-title", r_en["title"], r_zh["title"])}
 
 {chr(10).join(items)}
     </div>
