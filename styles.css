@@ -145,25 +145,31 @@ a { text-decoration: none; color: inherit; }
 .hero-title[data-zh] { font-weight: 900; font-size: 70px; line-height: 1.12; letter-spacing: -0.01em; }
 .hero-title .accent { color: var(--phoenix); }
 
-/* ---- Acronym block: what the name RADIUS stands for ----
-   This is the lab's identity, not a section label, so it is deliberately
-   styled differently from the .eyebrow used above every other section. */
+/* ---- Acronym line: what the name RADIUS stands for ----
+   The lab's identity, not a section label, so it is styled differently from
+   the .eyebrow that sits above every other section. The initial of each word
+   is enlarged and coloured, so the reader assembles R-A-D-I-U-S themselves. */
 .acronym {
-  display: flex; flex-wrap: wrap; gap: 16px 38px; margin: 0; padding: 0;
+  margin: 0; padding: 0;
+  font-family: var(--font-mono); font-weight: 400;
+  font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase;
+  line-height: 1.7; color: var(--on-dark-muted);
 }
-.acr-part { display: flex; flex-direction: column; gap: 7px; }
-.acr-letter {
-  font-family: var(--font-display); font-weight: 800; font-size: 24px;
-  line-height: 1; letter-spacing: 0.04em; color: var(--phoenix);
+.acr-part { white-space: nowrap; }
+.acr-part + .acr-part::before {
+  content: "·"; color: var(--on-dark-faint);
+  margin: 0 10px; letter-spacing: 0;
 }
-.acr-word {
-  font-family: var(--font-mono); font-size: 11.5px; line-height: 1;
-  letter-spacing: 0.09em; text-transform: uppercase; color: var(--on-dark-muted);
+.acr-cap {
+  font-family: var(--font-display); font-weight: 800;
+  font-size: 21px; letter-spacing: 0.02em; color: var(--phoenix);
 }
+/* Chinese has no initials, so the letter sits in front of the word. */
 .acr-word[data-zh] {
-  font-family: var(--font-body-zh); font-size: 13px; letter-spacing: 0.05em;
-  text-transform: none;
+  font-family: var(--font-body-zh); font-size: 14px;
+  letter-spacing: 0.04em; text-transform: none;
 }
+.acr-word[data-zh] .acr-cap { margin-right: 5px; }
 .hero-sub {
   font-size: 19px; line-height: 1.55; color: var(--on-dark-muted);
   max-width: 620px; margin: 28px 0 0;
@@ -189,23 +195,27 @@ a { text-decoration: none; color: inherit; }
 .research .container { padding-top: 92px; padding-bottom: 92px; }
 .research .eyebrow { margin-bottom: 6px; }
 .research-item {
-  display: grid; grid-template-columns: 8px 1fr; gap: 30px;
-  padding: 36px 0; border-top: 1px solid var(--ink); align-items: baseline;
+  position: relative;
+  display: grid; grid-template-columns: 1fr;
+  padding: 36px 0 36px 30px; border-top: 1px solid var(--ink); align-items: baseline;
 }
 .research-item:last-child { border-bottom: 1px solid var(--ink); }
 
 /* Each direction is identified by colour rather than by a number. The five
    areas are parallel, not a sequence, so 01-05 implied an order that isn't
-   there — and a colour carries over to slides and posters, a digit doesn't. */
-.research-mark {
-  align-self: stretch; width: 8px; border-radius: 4px;
-  background: var(--border-line);
+   there — and a colour carries over to slides and posters, a digit doesn't.
+   Drawn as a positioned pseudo-element rather than a stretched grid item:
+   align-self:stretch inside a baseline-aligned grid collapses to zero height
+   in some mobile browsers, which is why the bars went missing on phones. */
+.research-item::before {
+  content: ""; position: absolute; left: 0; top: 36px; bottom: 36px;
+  width: 8px; border-radius: 4px; background: var(--border-line);
 }
-.research-item[data-area="01"] .research-mark { background: var(--area-01); }
-.research-item[data-area="02"] .research-mark { background: var(--area-02); }
-.research-item[data-area="03"] .research-mark { background: var(--area-03); }
-.research-item[data-area="04"] .research-mark { background: var(--area-04); }
-.research-item[data-area="05"] .research-mark { background: var(--area-05); }
+.research-item[data-area="01"]::before { background: var(--area-01); }
+.research-item[data-area="02"]::before { background: var(--area-02); }
+.research-item[data-area="03"]::before { background: var(--area-03); }
+.research-item[data-area="04"]::before { background: var(--area-04); }
+.research-item[data-area="05"]::before { background: var(--area-05); }
 .research-body { display: grid; grid-template-columns: 1fr 1.3fr; gap: 40px; align-items: baseline; }
 .ri-title { font-family: var(--font-display); font-size: 30px; font-weight: 700; color: var(--ink); margin: 0; letter-spacing: -0.01em; }
 .ri-title[data-zh] { font-size: 28px; letter-spacing: 0; }
@@ -384,13 +394,13 @@ img.photo { width: 100%; height: 100%; display: block; object-fit: cover; paddin
   .btn-join { align-self: flex-start; }
   .hero-title { font-size: 44px; }
   .hero-title[data-zh] { font-size: 40px; }
-  .research-item { grid-template-columns: 6px 1fr; gap: 18px; }
-  .research-mark { width: 6px; }
+  .research-item { padding-left: 22px; }
+  .research-item::before { width: 6px; border-radius: 3px; }
   .research-body { grid-template-columns: 1fr; gap: 12px; }
-  .acronym { gap: 14px 24px; }
-  .acr-letter { font-size: 20px; }
-  .acr-word { font-size: 10.5px; letter-spacing: 0.06em; }
-  .acr-word[data-zh] { font-size: 12px; }
+  .acronym { font-size: 11.5px; letter-spacing: 0.07em; line-height: 2; }
+  .acr-part + .acr-part::before { margin: 0 7px; }
+  .acr-cap { font-size: 18px; }
+  .acr-word[data-zh] { font-size: 13px; }
   .pub { grid-template-columns: 56px 1fr; gap: 16px; }
   .members { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); }
   .pi { grid-template-columns: 1fr; gap: 24px; }

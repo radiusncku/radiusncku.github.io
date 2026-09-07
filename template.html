@@ -6,10 +6,13 @@
   <title>{{TITLE}}</title>
   <meta name="description" content="{{DESCRIPTION}}" />
 
-  <!-- Fonts (needs internet; this is fine for a live website) -->
+  <!-- Latin fonts are served from this repository (fonts/), so the page looks
+       identical on every machine even with no internet. Chinese still comes
+       from Google's CDN — see the note at the bottom of fonts-selfhost.css. -->
+  <link rel="stylesheet" href="fonts-selfhost.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=IBM+Plex+Mono:wght@400;500&family=Noto+Sans+TC:wght@400;500;700;900&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="styles.css" />
   <script src="script.js" defer></script>

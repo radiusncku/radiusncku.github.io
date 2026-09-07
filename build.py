@@ -182,16 +182,31 @@ def build_hero(en, zh):
     title_zh = (f'{esc(h_zh["title_before"])}'
                 f'<span class="accent">{esc(h_zh["title_accent"])}</span>'
                 f'{esc(h_zh["title_after"])}')
-    # The acronym block: "who we are". Each part shows the letter of RADIUS
-    # and the word it stands for. Deliberately styled differently from the
-    # plain .eyebrow labels used elsewhere, which are section names.
+    # The acronym line: "who we are". Each word's initial is enlarged and
+    # coloured so the reader assembles R-A-D-I-U-S. "Urban Systems" carries
+    # two letters (U and S), so letters are matched to words token by token.
+    def mark_initials(letters, word):
+        remaining = list(letters)
+        out = []
+        for i, token in enumerate(word.split(" ")):
+            if remaining and token[:1].upper() == remaining[0].upper():
+                remaining.pop(0)
+                out.append(f'<span class="acr-cap">{esc(token[0])}</span>'
+                           f'{esc(token[1:])}')
+            else:
+                out.append(esc(token))
+        return " ".join(out)
+
     parts = []
     for a, b in zip(h_en["acronym"], h_zh["acronym"]):
+        en_word = mark_initials(a["letter"], a["word"])
+        # Chinese has no initials, so the letter is prefixed to the word.
+        zh_word = (f'<span class="acr-cap">{esc(b["letter"])}</span>'
+                   f'{esc(b["word"])}')
         parts.append(
             f'<span class="acr-part">'
-            f'<span class="acr-letter">{esc(a["letter"])}</span>'
-            f'<span class="acr-word" data-en>{esc(a["word"])}</span>'
-            f'<span class="acr-word" data-zh>{esc(b["word"])}</span>'
+            f'<span class="acr-word" data-en>{en_word}</span>'
+            f'<span class="acr-word" data-zh>{zh_word}</span>'
             f'</span>')
     acronym = ('      <p class="acronym">\n        '
                + '\n        '.join(parts) + '\n      </p>')
@@ -231,7 +246,6 @@ def build_research(en, zh):
         # styles.css via data-area, so each research direction keeps the same
         # colour on the site, in slides, and on posters.
         items.append(f'''      <div class="research-item" data-area="{esc(a["num"])}">
-        <span class="research-mark" aria-hidden="true"></span>
         <div class="research-body">
           <div>
             {pair("h3", "ri-title", a["title"], b["title"])}
