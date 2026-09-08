@@ -117,6 +117,7 @@ def build_nav(en, zh, active):
     return f'''  <header class="site-nav">
     <div class="nav-inner">
       <a class="brand" href="index.html">
+        <img class="brand-icon" src="assets/icon-tint.svg" alt="" width="34" height="34" />
         <span class="brand-name">RADIUS</span>
         <span class="brand-sub">NCKU</span>
       </a>
@@ -147,7 +148,7 @@ def build_footer(en, zh):
     return f'''  <footer class="site-footer">
     <div class="footer-grid">
       <div>
-        <span class="footer-brand">{esc(f_en["brand"])}</span>
+        <span class="footer-brand"><img class="footer-icon" src="assets/icon-black.svg" alt="" width="26" height="26" />{esc(f_en["brand"])}</span>
         <p class="footer-addr" data-en>{addr_en}</p>
         <p class="footer-addr" data-zh>{addr_zh}</p>
       </div>

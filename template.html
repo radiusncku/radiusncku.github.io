@@ -9,6 +9,21 @@
   <!-- Latin fonts are served from this repository (fonts/), so the page looks
        identical on every machine even with no internet. Chinese still comes
        from Google's CDN — see the note at the bottom of fonts-selfhost.css. -->
+  <!-- Icons. The SVG favicon is used by modern browsers; the PNGs are the
+       fallback, and apple-touch-icon is the iOS home-screen tile. -->
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png" />
+  <link rel="icon" href="assets/favicon-16.png" sizes="16x16" type="image/png" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+
+  <!-- Link preview card, shown when the site is shared on Slack, X, LINE. -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="{{TITLE}}" />
+  <meta property="og:description" content="{{DESCRIPTION}}" />
+  <meta property="og:url" content="https://radiusncku.github.io/" />
+  <meta property="og:image" content="https://radiusncku.github.io/assets/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+
   <link rel="stylesheet" href="fonts-selfhost.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
